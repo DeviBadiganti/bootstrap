@@ -10,3 +10,23 @@
     height: 350px;
     width: 100%;
 }
+.card-img-top{
+    height: 300px;
+
+}
+
+#pills-tab{
+    justify-content: center;
+}
+.sai{
+    list-style: none;
+    color:green;
+}
+.sai li::before{
+content:"\f101";
+font-family:"Font Awesome 5 Free";
+font-weight: 900;
+padding-right: 10px;
+color:hotpink;
+}
+    
