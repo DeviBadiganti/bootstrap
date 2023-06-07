@@ -29,4 +29,36 @@ font-weight: 900;
 padding-right: 10px;
 color:hotpink;
 }
-    
+.form-style{
+    border: 2px solid rgb(255, 0, 179);
+}
+.input-style{
+    width: 100%;
+    height: 50px;
+    margin: 10px 0px;
+    outline: none;
+    border: 1px solid red;
+    padding-left: 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight:20px;
+}
+.form-style input:focus{
+    border:1px solid green;
+}
+.form-style label{
+    margin:2px 0px;
+    font-size: 30px;
+    font-weight: 300;
+}
+.icon{
+    position: absolute;
+    right: 20px;
+   top: 55px;
+}
+.btn{
+ margin-top: 20px;
+}
+.btn select{
+    margin: 300px;
+}
