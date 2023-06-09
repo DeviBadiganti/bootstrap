@@ -30,7 +30,8 @@ padding-right: 10px;
 color:hotpink;
 }
 .form-style{
-    border: 2px solid rgb(255, 0, 179);
+    border: 1px solid green;
+    background-color: pink;
 }
 .input-style{
     width: 100%;
@@ -48,17 +49,72 @@ color:hotpink;
 }
 .form-style label{
     margin:2px 0px;
-    font-size: 30px;
-    font-weight: 300;
+    font-size: 20px;
+    font-weight: 400;
 }
 .icon{
     position: absolute;
     right: 20px;
-   top: 55px;
+   top: 60px;
 }
 .btn{
  margin-top: 20px;
 }
 .btn select{
     margin: 300px;
+}
+.flyup-underline{
+    position: relative;
+    background-color: red;
+    width:150px;
+    height: 5px;
+    display: block;
+    margin: 30px auto;
+}
+  .flyup-underline::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        border-left: 10px solid #fff;
+        border-right: 10px solid #fff;
+        width: 80px;
+        animation:underline 3s linear infinite;
+        -webkit-animation:underline 3s linear infinite;
+
+    }
+    @keyframes underline{
+        0%{
+            transform: translatex(-150px);
+        }
+        100%{
+            transform: translatex(150px);
+        }
+    }      
+.news{
+    text-align: center;
+    
+}
+.view-btn{
+    float: right;
+    
+}
+    .text-muted::after{
+        content:"\f061";
+        font-family:"Font Awesome 5 Free";
+        font-weight: 900;
+        padding-left: 10px;
+        color:darkviolet;
+}
+
+.view-btn:hover{
+
+background-color:darkmagenta;
+transition: all 0.5s ease-in-out;
+}
+.text-muted:hover{
+background-color:darkmagenta;
+transition: all 0.5s ease-in-out;
+box-radius:10px;
+font-color:white;
 }
