@@ -106,17 +106,47 @@ color:hotpink;
         padding-left: 10px;
         color:darkviolet;
 }
-
-.view-btn:hover{
-
-background-color:darkmagenta;
-transition: all 0.5s ease-in-out;
+.comment::before{
+    content: "\f004";
+    font-family:"Font Awesome 5 Free";
+    font-weight: 900;
+    padding-left: 10px;
+    color:darkviolet;
 }
-.text-muted:hover{
-background-color:darkmagenta;
+.share::before{
+    content: "\f1e0";
+    font-family:"Font Awesome 5 Free";
+    font-weight: 900;
+    padding-left: 10px;
+    color:darkviolet;
+}
+.text-decoration a{
+    text-decoration: none;
+
+}
+.view-btn:hover{
+color: #fff;
+background-color:#8b008b;
 transition: all 0.5s ease-in-out;
 box-radius:10px;
-font-color:white;
+}
+.view-btn{
+   border-radius: 6px;
+}
+.text-decoration a h6 :hover{
+    /* background-color:#8b008b; */
+    color:white;
+ transition: all 0.5s ease-in-out;
+}
+.share p {
+   left: 50px;
+}
+.footer{
+    /* border: 1px solid black; */
+    background-color:#af31f3;
+    color: #fff;
+    padding: 70px 100px ;
+   
 }
 .heading{
     display: none;
