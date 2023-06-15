@@ -54,7 +54,7 @@ color:hotpink;
 }
 .icon{
     position: absolute;
-    right: 20px;
+    right: 30px;
    top: 60px;
 }
 .btn{
@@ -117,4 +117,10 @@ background-color:darkmagenta;
 transition: all 0.5s ease-in-out;
 box-radius:10px;
 font-color:white;
+}
+.heading{
+    display: none;
+}
+.heading-hide{
+    display: block;
 }
