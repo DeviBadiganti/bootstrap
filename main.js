@@ -147,18 +147,70 @@
   // }
   // sai(5,4);
 
-  // button function
-  const hidehead = document.querySelector(".heading");
-  function myFunction(){
-    return hidehead.classList.toggle("heading-hide");
-  }
+  //  button function
+   const hidehead = document.querySelector(".heading");
+   function myFunction(){
+     return hidehead.classList.toggle("heading-hide");
+   }
   
-  // js events
-  const icon=document.querySelector(".icon");
-  const password=document.querySelector(".password");
-  icon.addEventListener("click",function passwordclick(){
-    icon.classList.toggle("fa-eye");
-    icon.classList.toggle( "fa-eye-slash");
-    password.type=password.type==="password"?"text":"password"                                                                                                                                                                                                                                                                                                             "text": "password"
-  }
-  )
+  // // js events
+ 
+  // const icon =document.querySelector(".icon");
+  // const password=document.querySelector(".password");
+  // icon.addEventListener("click",function passwordClick(){
+  //   icon.classList.toggle("fa-eye");
+  //   icon.classList.toggle("fa-eye-slash");
+  //   console.log("hhhhf");
+  //   password.type=password.type==="password"?"text":"password"
+  // })
+  
+  // // form hide
+   const formHide=document.querySelector(".form-hide");
+   function myFunction(){
+   return formHide.classList.toggle("form-hide-active");
+   }
+
+
+  //  array methods 
+   
+  // push method
+  const array=[ "web","development","app","mobile","ios","digital","marketing"];
+  const array1=array.push("software");
+   console.log(array);
+//   //  pop method
+//   const array2=array.pop();
+//    console.log(array);
+//   //  shift method
+//   const array3=array.shift();
+//    console.log(array);
+//   //  unshift method
+//  const array4=array.unShift("software");
+//     console.log(array);
+//     // splice method
+//     const array5=array.splice( 2,1,"developer","window");
+//     console.log(array);
+//     // slice method
+   const array6=array.slice(2,5);
+   console.log(array6);
+   const array7=array.slice(2);
+   console.log(array7);
+    // tostring method
+    const array8=array.toString();
+    console.log(array8);
+    // join method
+    const array9=array.join("*");
+    console.log(array9);
+  //  max and min method
+  const sai=[4,65,28,75,95,23,13,109,356,893,4784];
+    console.log(Math.max.apply (null,sai));
+    console.log(Math.min.apply(null,sai));
+   
+  // // cards
+  // let cards="";
+  // objArray.map(function myFunction(item)){
+  //   cards+='<div>
+  //   <h1>$(item.name)</h1>
+  //   <h4>$(item.age)</h4>
+  //   <h>$(item.des)</h1>
+  // }
+  // const ronaldo=[{id:1,title:Image1, img :"image-13.jfif",price:10000/-,RATING  }]

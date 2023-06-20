@@ -147,10 +147,38 @@ box-radius:10px;
     color: #fff;
     padding: 70px 100px ;
    
-}
+ }
 .heading{
     display: none;
 }
 .heading-hide{
     display: block;
 }
+ .form-hide{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: +9;
+    background-color: pink;
+    overflow: scroll;
+    transform: translateY(-1500px);
+    transition: all 0.5s ease-in-out;
+}
+.form-hide-active{
+    transform: translateY(0px);
+    transition: all 0.5s ease-in-out;
+}
+.form-btn{
+    /* align-items: center; */
+    color: #af31f3;
+    width: 30px;
+    /* right: 200px; */
+    margin: 30px auto;
+ /* font size: 20px; */
+
+    
+}
+
+  
