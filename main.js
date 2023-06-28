@@ -147,28 +147,28 @@
   // }
   // sai(5,4);
 
-  //  button function
-   const hidehead = document.querySelector(".heading");
-   function myFunction(){
-     return hidehead.classList.toggle("heading-hide");
-   }
+   //  button function
+  //  const hidehead = document.querySelector(".heading");
+  //  function myFunction(){
+  //    return hidehead.classList.toggle("heading-hide");
+  //  }
   
-  // // js events
+   // // js events
  
-  const icon =document.querySelector(".icon");
-  const password=document.querySelector(".password");
-  icon.addEventListener("click",function passwordClick(){
-    icon.classList.toggle("fa-eye");
-    icon.classList.toggle("fa-eye-slash");
-    console.log("hhhhf");
-    password.type=password.type==="password"?"text":"password"
-  })
+  // const icon =document.querySelector(".icon");
+  // const password=document.querySelector(".password");
+  // icon.addEventListener("click",function passwordClick(){
+  //   icon.classList.toggle("fa-eye");
+  //   icon.classList.toggle("fa-eye-slash");
+  //   console.log("hhhhf");
+  //   password.type=password.type==="password"?"text":"password"
+  // })
   
-  // form hide
-   const formHide=document.querySelector(".form-hide");
-   function myFunction(){
-   return formHide.classList.toggle("form-hide-active");
-   }
+  // // form hide
+  //  const formHide=document.querySelector(".form-hide");
+  //  function myFunction(){
+  //  return formHide.classList.toggle("form-hide-active");
+  //  }
 
 
   //  array methods 
@@ -247,8 +247,8 @@
 
   // Date
 
-//   // present date
- const date=new Date();
+ //   // present date
+//  const date=new Date();
 //  console.log(date);
 
 //   // previous date
@@ -432,17 +432,6 @@
 //   clearInterval(interval);
 //    },12000);
 
-// const li=document.createElement(".li");
-// const li1=document.createElement(".li1");
-// const li2=document.createElement(".li2");
-// const li4=document.createElement(".li4");
-// const li5=document.createElement(".li5");
-// li.innerText="Home";
-// li1.innerText="Aboutus";
-// li2.innerText="Services";
-// li3.innerText="Link";
-// li4.innerText="Dropdown";
-// li5.innerText="Action";
 
 
 // div.appendChild(li);
@@ -451,7 +440,7 @@
 
 // conditional statements
 // if else statement
-const x=50;
+// const x=50;
 // if(x<50){
 //   console.log("Hey");
 // }
@@ -539,6 +528,48 @@ const x=50;
 
 // Dom intro
 const todo=document.querySelector(".todo");
-const div=document.createElement(".div");
+const div=document.createElement("div");
+const li=document.createElement("li");
+const li1=document.createElement("li");
+const li2=document.createElement("li");
+const li3=document.createElement("li");
+const li4=document.createElement("li");
+li.innerText="Home";
+li1.innerText="Aboutus";
+li2.innerText="Services";
+li3.innerText="Link";
+li4.innerText="Dropdown";
 todo.appendChild(div);
+div.appendChild(li);
+div.appendChild(li1);
+div.appendChild(li2);
+div.appendChild(li3);
+div.appendChild(li4); 
+div.className="division";
+li1.className="classlist";
+// li2.remove();
 
+// tap button
+  const click=document.querySelector(".click-btn");
+  window.addEventListener("scroll",function myFunction(){
+    if(window.pageYOffset > 100){
+      click.classList.add("click-btn-active")
+    }else{
+      click.classList.remove("click-btn-active")
+    }
+  });
+
+
+  
+  // setTimeout button
+  const button=document.querySelector(".timeout");
+  setTimeout(function myFunction(){
+    button.innerText="Hello world...!";
+  },3000);
+
+
+   // setIntreval button
+   const btn=document.querySelector(".interval");
+   const interval=setInterval(function myFunction(){
+    btn.classList.toggle("interval-active");
+   },3000);

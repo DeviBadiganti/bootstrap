@@ -184,8 +184,40 @@ transition: all 0.5s ease-in-out;
     /* right: 200px; */
     margin: 30px auto;
  /* font size: 20px; */
-
-    
+  
 }
-
+.click-btn{
+    display: none;
+    position: fixed;
+    left: 0;
+    bottom: 20px;
+}
+.click-btn-active{
+    display: block;
+}
+.fa-angle-up{
+    font-size: 50px;
+}
+.timeout-btn{
+    padding-left: 80px;
+    margin-bottom: 30px;
+  }
+  .timeout{
+      padding: 10px 20px;
+      font-size: 20px;
+     background-color: aqua;
+  }
+  .intreval-btn{
+      padding-left: 80px;
+      margin-bottom: 30px;
+  }
+  .intreval{
+      display: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color:aqua;
+  }
+  .intreval-active{
+      display:block;
+  }
   
