@@ -11,7 +11,7 @@
     width: 100%;
 }
 .card-img-top{
-    height: 300px;
+    height:300px;
 
 }
 
@@ -96,10 +96,9 @@ color:hotpink;
     
 }
 .view-btn{
-    float: right;
-    
+    float: right;  
 }
-    .text-muted::after{
+.text-muted::after{
         content:"\f061";
         font-family:"Font Awesome 5 Free";
         font-weight: 900;
@@ -119,20 +118,28 @@ color:hotpink;
     font-weight: 900;
     padding-left: 10px;
     color:darkviolet;
+    /* gap: 10px; */
+}
+.footerdiv{
+    gap: 30px;
 }
 .text-decoration a{
     text-decoration: none;
 
 }
-.view-btn:hover{
-color: #fff;
-background-color:#8b008b;
-transition: all 0.5s ease-in-out;
-box-radius:10px;
-}
 .view-btn{
-   border-radius: 6px;
+    border-radius:6px;
+    border-color:#8b008b ;
+    color: #fff;
+    background-color:#8b008b;
+ }
+.view-btn:hover{
+    color:#8b008b;
+    background-color:white;
+transition: all 0.5s ease-in-out;
+/* box-radius:10px; */
 }
+
 .text-decoration a h6 :hover{
     /* background-color:#8b008b; */
     color:white;
@@ -163,11 +170,11 @@ box-radius:10px;
     z-index: +9;
     background-color: pink;
     overflow: scroll;
-    transform: translateY(-1500px);
+    transform: translatey(-1500px);
     transition: all 0.5s ease-in-out;
 }
 .form-hide-active{
-    transform: translateY(0px);
+    transform: translatey(0px);
     transition: all 0.5s ease-in-out;
 }
 .form-btn{
