@@ -432,12 +432,6 @@
 //   clearInterval(interval);
 //    },12000);
 
-
-
-// div.appendChild(li);
-// li.appendChild(li);
-// todo.appendChild(div);
-
 // conditional statements
 // if else statement
 // const x=50;
@@ -548,6 +542,22 @@ div.appendChild(li4);
 div.className="division";
 li1.className="classlist";
 // li2.remove();
+
+
+
+const todoInput=document.querySelector(".todo-input");
+const todoButton=document.querySelector(".todo-button");
+const todoList=document.querySelector(".todoList");
+todoButton.addEventListener("click",function myFunction(e){      
+  e.preventDefaultd();
+  const div = document.querySelector("div");
+  const li = document.querySelector("li");
+  li.innerText=todoInput.value;
+ div.appendChild(li);
+ todoList.appendChild(div);
+ todoInput.value="";
+});
+
 
 // tap button
   const click=document.querySelector(".click-btn");

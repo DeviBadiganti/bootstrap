@@ -220,4 +220,7 @@ transition: all 0.5s ease-in-out;
   .intreval-active{
       display:block;
   }
+  .todo{
+    /* display: center; */
+  }
   
